@@ -6,25 +6,17 @@ using System.Threading.Tasks;
 
 namespace SortingMechanisms
 {
-    public class BubbleSort : ISortAlgorithm
+    public class BubbleSort : BaseAlgorithm
     {
-        int[] array;
-        public BubbleSort(int[] array)
-        {
-            this.array = array;
-        }
+        public BubbleSort(int[] array) : base(array)
+        { }
 
-        public string Name
+        public override string Name
         {
             get { return "Bubble sort"; }
         }
 
-        public int[] Items
-        {
-            get { return array; }
-        }
-
-        public void Sort()
+        public override void Sort()
         {
             //Take an adjacent pair from the beginning, swap if necessary. 
             //Continue till nth place, when the largest value is at the end of the array.
@@ -47,13 +39,6 @@ namespace SortingMechanisms
                 if (!continueSort)
                     break;
             }
-        }        
-
-        private void Swap(int index1, int index2)
-        {
-            array[index1] += array[index2];
-            array[index2] = array[index1] - array[index2];
-            array[index1] = array[index1] - array[index2];
         }
     }
 }

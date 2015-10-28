@@ -16,6 +16,8 @@ namespace SortingMechanisms
 
                 algorithms.Add(new BubbleSort(DataGenerator.GenerateData(50, 1000)));
                 algorithms.Add(new SelectionSort(DataGenerator.GenerateData(50, 1000)));
+                algorithms.Add(new InsertionSort(DataGenerator.GenerateData(50, 1000)));
+                algorithms.Add(new MergeSort(DataGenerator.GenerateData(50, 1000)));
 
                 foreach (var algo in algorithms)
                 {

@@ -6,25 +6,17 @@ using System.Threading.Tasks;
 
 namespace SortingMechanisms
 {
-    class SelectionSort : ISortAlgorithm
+    class SelectionSort : BaseAlgorithm
     {
-        int[] array;
-        public SelectionSort(int[] array)
-        {
-            this.array = array;
-        }
+        public SelectionSort(int[] array) : base(array)
+        { }
 
-        public string Name
+        public override string Name
         {
             get { return "Selection sort"; }
         }
 
-        public int[] Items
-        {
-            get { return array; }
-        }
-
-        public void Sort()
+        public override void Sort()
         {
             //Scan all items and find the smallest.
             //Swap it into position as the first item.
@@ -42,13 +34,6 @@ namespace SortingMechanisms
                 if (indexWithMinValue != i)
                     Swap(i, indexWithMinValue);
             }
-        }
-
-        private void Swap(int index1, int index2)
-        {
-            array[index1] += array[index2];
-            array[index2] = array[index1] - array[index2];
-            array[index1] = array[index1] - array[index2];
         }
     }        
 }

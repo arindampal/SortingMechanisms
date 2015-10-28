@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SortingMechanisms
@@ -12,6 +13,7 @@ namespace SortingMechanisms
         public static int[] GenerateData(int count, int maxLimit)
         {
             //Changing seed to arriv at different input values.
+            Thread.Sleep(1);
             Random random = new Random(DateTime.Now.Millisecond);
             int[] array = new int[count];
 
