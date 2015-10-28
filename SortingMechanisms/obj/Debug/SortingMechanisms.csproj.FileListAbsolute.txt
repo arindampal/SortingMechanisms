@@ -1,0 +1,6 @@
+D:\Self Learning\SortingMechanisms\SortingMechanisms\bin\Debug\SortingMechanisms.exe.config
+D:\Self Learning\SortingMechanisms\SortingMechanisms\bin\Debug\SortingMechanisms.exe
+D:\Self Learning\SortingMechanisms\SortingMechanisms\bin\Debug\SortingMechanisms.pdb
+D:\Self Learning\SortingMechanisms\SortingMechanisms\obj\Debug\SortingMechanisms.csprojResolveAssemblyReference.cache
+D:\Self Learning\SortingMechanisms\SortingMechanisms\obj\Debug\SortingMechanisms.exe
+D:\Self Learning\SortingMechanisms\SortingMechanisms\obj\Debug\SortingMechanisms.pdb
