@@ -18,7 +18,8 @@ namespace SortingMechanisms
                 algorithms.Add(new SelectionSort(DataGenerator.GenerateData(50, 1000)));
                 algorithms.Add(new InsertionSort(DataGenerator.GenerateData(50, 1000)));
                 algorithms.Add(new MergeSort(DataGenerator.GenerateData(50, 1000)));
-                //algorithms.Add(new SleepSort(DataGenerator.GenerateData(10, 50)));
+                //algorithms.Add(new SleepSort(DataGenerator.GenerateData(10, 10)));
+                algorithms.Add(new HeapSort(DataGenerator.GenerateData(50, 1000)));
 
                 foreach (var algo in algorithms)
                 {

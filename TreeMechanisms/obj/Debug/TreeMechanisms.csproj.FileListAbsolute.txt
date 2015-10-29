@@ -1,0 +1,6 @@
+D:\Self Learning\SortingMechanisms\TreeMechanisms\bin\Debug\TreeMechanisms.exe.config
+D:\Self Learning\SortingMechanisms\TreeMechanisms\bin\Debug\TreeMechanisms.exe
+D:\Self Learning\SortingMechanisms\TreeMechanisms\bin\Debug\TreeMechanisms.pdb
+D:\Self Learning\SortingMechanisms\TreeMechanisms\obj\Debug\TreeMechanisms.exe
+D:\Self Learning\SortingMechanisms\TreeMechanisms\obj\Debug\TreeMechanisms.pdb
+D:\Self Learning\SortingMechanisms\TreeMechanisms\obj\Debug\TreeMechanisms.csprojResolveAssemblyReference.cache

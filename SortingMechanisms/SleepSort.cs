@@ -33,7 +33,7 @@ namespace SortingMechanisms
             {
                 var task = Task.Factory.StartNew(() =>
                 {
-                    Thread.Sleep(value * 200);
+                    Thread.Sleep(value * 1000);
                     queue.Enqueue(value);
                 });                
 
