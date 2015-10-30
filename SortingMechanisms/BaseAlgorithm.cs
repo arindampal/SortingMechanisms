@@ -25,9 +25,17 @@ namespace SortingMechanisms
 
         protected void Swap(int index1, int index2)
         {
-            array[index1] += array[index2];
-            array[index2] = array[index1] - array[index2];
-            array[index1] = array[index1] - array[index2];
+            if (index1 != index2)
+            {
+                //Both work
+                /*array[index1] += array[index2];
+                array[index2] = array[index1] - array[index2];
+                array[index1] = array[index1] - array[index2];*/
+
+                array[index1] = array[index1] ^ array[index2];
+                array[index2] = array[index1] ^ array[index2];
+                array[index1] = array[index1] ^ array[index2];
+            }
         }
     }
 }

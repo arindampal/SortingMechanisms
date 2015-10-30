@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,12 +15,11 @@ namespace SortingMechanisms
             {
                 List<ISortAlgorithm> algorithms = new List<ISortAlgorithm>();
 
-                algorithms.Add(new BubbleSort(DataGenerator.GenerateData(50, 1000)));
-                algorithms.Add(new SelectionSort(DataGenerator.GenerateData(50, 1000)));
-                algorithms.Add(new InsertionSort(DataGenerator.GenerateData(50, 1000)));
-                algorithms.Add(new MergeSort(DataGenerator.GenerateData(50, 1000)));
-                //algorithms.Add(new SleepSort(DataGenerator.GenerateData(10, 10)));
-                algorithms.Add(new HeapSort(DataGenerator.GenerateData(50, 1000)));
+                foreach (var a in Assembly.GetExecutingAssembly().GetTypes().Where(a => a.IsClass && a.BaseType.Name == "BaseAlgorithm" && a.Name != "SleepSort"))
+                {
+                    algorithms.Add((BaseAlgorithm)Activator.CreateInstance(a, new object[] { DataGenerator.GenerateData(5, 100) }));
+                    Console.WriteLine(a.Name);
+                }                
 
                 foreach (var algo in algorithms)
                 {
